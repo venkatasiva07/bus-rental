@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Rental</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="s.css">
+</head>
+
+<body>
+    <header class="bg-primary text-white text-center py-4">
+        <h1>Bus Rental Services</h1>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="a4.html">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-8">
+                <h2>Welcome to Bus Rental Services</h2>
+                <p>We provide buses for all occasions and trips. Whether you need transportation for a wedding,
+                    corporate event, or a weekend getaway, we've got you covered.</p>
+                <p>Your reliable partner for comfortable and safe travel. Explore our services and book your trip today.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <img src="bus-image7.jpeg" alt="Bus" class="img-fluid">
+            </div>
+        </div>
+
+        <br>
+        <h3> Details for bokking</h3>
+        <form action="/book-a-bus" method="post" style="justify-content:center;">
+            <div class="mb-3">
+                <label for="name">Your name</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email">Your email address</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="phone">Your phone number</label>
+                <input type="tel" class="form-control" id="phone" name="phone" required>
+            </div>
+            <div class="mb-3">
+                <label for="departure-date">Departure date</label>
+                <input type="date" class="form-control" id="departure-date" name="departure_date" required>
+            </div>
+            <div class="mb-3">
+                <label for="arrival-date">Arrival date</label>
+                <input type="date" class="form-control" id="arrival-date" name="arrival_date" required>
+            </div>
+            <div class="mb-3">
+                <label for="number-of-passengers">Number of passengers</label>
+                <input type="number" class="form-control" id="number-of-passengers" name="number_of_passengers"
+                    required>
+            </div>
+            <button type="submit" class="btn btn-primary">Book a bus</button>
+        </form>
+
+    </div>
+
+    <script>
+        // Get the form element
+        const bookBusForm = document.querySelector('form');
+
+        // Add an event listener to the form
+        bookBusForm.addEventListener('submit', function () {
+            // Clear the form fields
+            bookBusForm.reset();
+
+            // Prevent the form from submitting
+            event.preventDefault();
+            alert('Thank you for booking a bus! We will send you a confirmation email shortly.');
+        });
+    </script>
+    <!-- <h4 style="text-align:center">Multiple Slideshows</h4>
+
+    <p>Slideshow 1:</p>
+    <div class="slideshow-container">
+        <div class="mySlides1">
+            <img src="bus-image.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides1">
+            <img src="bus-image2.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides1">
+            <img src="bus-image7.jpeg" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+    </div>
+
+    
+    <script>
+        let slideIndex = [1, 1];
+        let slideId = ["mySlides1"]
+        showSlides(1, 0);
+        showSlides(1, 1);
+
+        function plusSlides(n, no) {
+            showSlides(slideIndex[no] += n, no);
+        }
+
+        function showSlides(n, no) {
+            let i;
+            let x = document.getElementsByClassName(slideId[no]);
+            if (n > x.length) { slideIndex[no] = 1 }
+            if (n < 1) { slideIndex[no] = x.length }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex[no] - 1].style.display = "block";
+        }
+    </script> -->
+
+    <footer class="bg-primary text-white text-center py-3">
+        <p>&copy; 2023 Bus Rental Services</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

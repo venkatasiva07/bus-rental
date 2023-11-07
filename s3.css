@@ -1,0 +1,107 @@
+body{
+  background-image: url('service background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+/* #help{
+  background-image: url('special-offer.png');
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  /* background-size: 100% 100%;
+} */ 
+
+h1, h3, h5, h4, p {
+  text-align: center;
+}
+.trending-holiday-themes .owl-carousel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.trending-holiday-themes .owl-carousel .item {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.trending-holiday-themes .owl-carousel .item .card {
+  flex: 1;
+  margin: 0 10px;
+}
+/* .card-img-top1{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 150%;
+} */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-img-top {
+  width: 150px;
+  height: 150px;
+}
+/* .card-img-top2{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 150%;
+  margin: 10px 5px;
+  /* padding: 10px; */
+/* } */ */
+
+.owl-carousel .item {
+  display: inline-block;
+  width: 25%;
+  margin: 0 10px;
+}
+
+
+.help-plan-buttons a {
+  float: left;
+  margin-right: 10px;
+}
+
+.help-plan {
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.help-plan-header,
+.help-plan-buttons {
+  text-align: center;
+}
+
+/*
+    Prevent buttons from overlapping
+  */
+.help-plan-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.help-plan-header h2 {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.help-plan-buttons a {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #000;
+  color: #fff;
+}
+
+.help-plan-buttons a:hover {
+  background-color: #159957;
+}
+
+.help-plan:last-child {
+  margin-bottom: 0;
+}
+
